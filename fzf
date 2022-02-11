@@ -1,30 +1,30 @@
+#!/usr/bin/env sh
+
 # Base16 coffee
 # Author: coffee-theme
 
 _gen_fzf_default_opts() {
+    local color00='#262220'
+    local color01='#af5f5f'
+    local color02='#87875f'
+    local color03='#bcbc6c'
+    local color04='#666c7f'
+    local color05='#cd7998'
+    local color06='#6d978a'
+    local color07='#bbbbbb'
+    local color08='#8f9494'
+    local color09='#bb6868'
+    local color0A='#849155'
+    local color0B='#c5c563'
+    local color0C='#87afaf'
+    local color0D='#c987a0'
+    local color0E='#7ca296'
+    local color0F='#ddd0c0'
 
-local color00='#262220'
-local color01='#af5f5f'
-local color02='#87875f'
-local color03='#bcbc6c'
-local color04='#666c7f'
-local color05='#cd7998'
-local color06='#6d978a'
-local color07='#bbbbbb'
-local color08='#8f9494'
-local color09='#bb6868'
-local color0A='#849155'
-local color0B='#c5c563'
-local color0C='#87afaf'
-local color0D='#c987a0'
-local color0E='#7ca296'
-local color0F='#ddd0c0'
-
-export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:$color01,bg:$color00,spinner:$color0C,hl:$color0D"\
-" --color=fg:$color04,header:$color0D,info:$color0A,pointer:$color0C"\
-" --color=marker:$color0C,fg+:$color06,prompt:$color0A,hl+:$color0D"
-
+    export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
+    " --color=bg+:$color01,bg:$color00,spinner:$color0C,hl:$color0D"\
+    " --color=fg:$color04,header:$color0D,info:$color0A,pointer:$color0C"\
+    " --color=marker:$color0C,fg+:$color06,prompt:$color0A,hl+:$color0D"
 }
 
 _gen_fzf_default_opts
